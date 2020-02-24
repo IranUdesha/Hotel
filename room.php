@@ -37,19 +37,36 @@
   <div class="carousel-inner" role="listbox">
     <!--First slide-->
     <div class="carousel-item active">
-      <img class="d-block w-100" src="img/ban_room1.jpg"  alt="First slide">
+      <img class="d-block w-100" src="img/ban_room11.jpg"  alt="First slide">
+      
+        <div class="carousel-caption text-left">
+          <h1>Rooms.</h1>
+          <p class="col-8">Experience 5-star luxury in our hotel roomsyou have approximately 50 different accommodation options. 22 of these are divided between 13 double rooms, 5 villas, 3 suites as well as the Grand Villa.</p>
+          <p><a class="btn btn-lg btn-primary" href="resavation.php" role="button">Details</a></p>
+        </div>
+      
     </div>
     <!--/First slide-->
     <!--Second slide-->
     <div class="carousel-item">
-      <img class="d-block w-100" src="img/ban_room2.jpg"
+      <img class="d-block w-100" src="img/ban_room22.jpg"
         alt="Second slide">
+        <div class="carousel-caption text-left text-black">
+          <h1>Rooms.</h1>
+          <p class="col-8">Experience 5-star luxury in our hotel roomsyou have approximately 50 different accommodation options. 22 of these are divided between 13 double rooms, 5 villas, 3 suites as well as the Grand Villa.</p>
+          <p><a class="btn btn-lg btn-primary" href="resavation.php" role="button">Details</a></p>
+        </div>
     </div>
     <!--/Second slide-->
     <!--Third slide-->
     <div class="carousel-item">
-      <img class="d-block w-100" src="img/ban_room3.jpg"
+      <img class="d-block w-100" src="img/ban_room33.jpg"
         alt="Third slide">
+        <div class="carousel-caption text-left">
+          <h1>Rooms.</h1>
+          <p class="col-8">Experience 5-star luxury in our hotel roomsyou have approximately 50 different accommodation options. 22 of these are divided between 13 double rooms, 5 villas, 3 suites as well as the Grand Villa.</p>
+          <p><a class="btn btn-lg btn-primary" href="resavation.php" role="button">Details</a></p>
+        </div>
     </div>
     <!--/Third slide-->
   </div>
@@ -72,8 +89,8 @@
 <div class="album py-5 bg-light">
     <div class="container">
 
-      <div class="row wow fadeInUp">
-        <div class="col-md-4 ">
+      <div class="row">
+        <div class="col-md-4 wow fadeInLeft">
           <div class="card mb-4 shadow-sm">
             <img class="card-img-top" src="img/room.jpg" alt="Card image cap">
             <div class="card-body">
@@ -81,7 +98,7 @@
                     <a href="#">SUPERIOR ROOM <div style="font-size: 15px;display: inline-block;">(ROOM ONLY)</div></a>
                 </h3>
                 <ul class="card-text">
-                    <li style="font-size: 13px;"> 35 SQUARE METRES</li><br>
+                    <li style="font-size: 13px;"> 30 SQUARE METRES</li><br>
                     <li style="font-size: 13px;"> SPACIOUS BATHROOM WITH GLASS ENCLOSURE</li><br>
                     <li style="font-size: 13px;">50” FLAT-SCREEN TELEVISION WITH CABLE CHANNELS </li>
                       <li style="font-size: 13px;"> PRIVILEGED ACCESS TO THE ICONIC INFINITY POOL AND ROOFTOP GARDEN</li><br>
@@ -91,12 +108,12 @@
                 <div class="btn-group">
                 <a href="resavation.php"> <button type="button" class="btn btn-sm btn-outline-secondary">Book Now</button>    </a>              
                 </div>
-                <!-- <small class="text-muted">9 mins</small> -->
+
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 wow fadeInUp">
             <div class="card mb-4 shadow-sm">
               <img class="card-img-top" src="img/deluxe.jpg" alt="Card image cap">
               <div class="card-body">
@@ -115,12 +132,12 @@
                   <div class="btn-group">
                   <a href="resavation.php"> <button type="button" class="btn btn-sm btn-outline-secondary">Book Now</button>    </a>              
                   </div>
-                  <!-- <small class="text-muted">9 mins</small> -->
+
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 wow fadeInRight">
             <div class="card mb-4 shadow-sm">
               <img class="card-img-top" src="img/superior_twin.jpg" alt="Card image cap">
               <div class="card-body">
@@ -128,7 +145,9 @@
                     <a href="#">PLATIMUM SUITE</a>
                 </h3>
                 <ul class="room-info">
-                    <li style="font-size: 13px;">  79 SQUARE METRES</li><br>
+
+                    <li style="font-size: 13px;">  55 SQUARE METRES</li><br>
+
                     <li style="font-size: 13px;"> BREAKFAST INCLUDED </li><br>
                     <li style="font-size: 13px;"> SPACIOUS BATHROOM WITH GLASS ENCLOSURE</li><br>
                     <li style="font-size: 13px;">50” FLAT-SCREEN TELEVISION WITH CABLE CHANNELS</li><br>
@@ -139,7 +158,7 @@
                   <div class="btn-group">
                   <a href="resavation.php"> <button type="button" class="btn btn-sm btn-outline-secondary">Book Now</button>    </a>                
                   </div>
-                  <!-- <small class="text-muted">9 mins</small> -->
+
                 </div>
               </div>
             </div>

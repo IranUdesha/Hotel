@@ -20,25 +20,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-        <script>
-            var stateManager = (function () {
+    <script>
+        var stateManager = (function () {
             var state = null;
             var resizePage = function () {
-                
-                if ($('body').width() > 1500){
-                if (state !== "desktop") { displayDesktop(); }
-            
+
+                if ($('body').width() > 1500) {
+                    if (state !== "desktop") { displayDesktop(); }
+
                 }
-                if ($('body').width() < 1500){
-                if (state !== "desktopsm") { displayDesktopsm(); }
-            
+                if ($('body').width() < 1500) {
+                    if (state !== "desktopsm") { displayDesktopsm(); }
+
                 }
                 if ($('body').width() < 1100) {
-                if (state !== "mobile") { displayMobile(); }
-            
+                    if (state !== "mobile") { displayMobile(); }
+
                 }
-                
-            }; 
+
+            };
 
             var displayMobile = function () {
                 state = "mobile";
@@ -58,16 +58,16 @@
                 $('#swap').attr('src', 'img/banner1.jpg');
                 //$("#res").height(none);
             };
-            
+
             return {
                 init: function () {
-                resizePage();
-                $(window).on('resize', resizePage);
+                    resizePage();
+                    $(window).on('resize', resizePage);
                 }
             };
-            } ());
-            stateManager.init();    
-        </script>
+        }());
+        stateManager.init();    
+    </script>
 
 </head>
 
@@ -78,40 +78,40 @@
 
 
     <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
-        <!--Slides-->
+        <!-- banner -->
         <div class="carousel-inner" role="listbox">
-            <!--First slide-->
-            <div class="carousel-item active" >
-                <img class="d-block w-100" id= "swap" src="img/banner1.jpg" alt="First slide">
+            <div class="carousel-item active">
+                <img class="d-block w-100" id="swap" src="img/banner1.jpg" alt="First slide">
                 <div class="carousel-caption " id="res">
-                    <div id="booking" class="section">
 
+                <!-- form box -->
+                    <div id="booking" class="section">
                         <div class="section-center">
                             <div class="container animated fadeInUp">
-
-                        <div class="section-center" >
-                            <div class="container">
-
                                 <div class="row">
                                     <div class="booking-form">
                                         <div class="form-header">
                                             <h1>Make your reservation</h1>
                                         </div>
+                                        <!-- form -->
                                         <form action="db/insert.php" method="POST">
                                             <div class="form-group">
-                                                <input class="form-control" name="fullname" type="text" placeholder="Full Name" required="">
+                                                <input class="form-control" name="fullname" type="text"
+                                                    placeholder="Full Name" required="">
                                                 <span class="form-label">Full Name</span>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <input class="form-control" name="checkin" type="date" required="">
+                                                        <input class="form-control" name="checkin" type="date"
+                                                            required="">
                                                         <span class="form-label">Check In</span>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <input class="form-control" name="checkout" type="date" required="">
+                                                        <input class="form-control" name="checkout" type="date"
+                                                            required="">
                                                         <span class="form-label">Check out</span>
                                                     </div>
                                                 </div>
@@ -144,7 +144,8 @@
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <select class="form-control" name="children" required="">
-                                                            <option value="" selected="" hidden="">No of Children</option>
+                                                            <option value="" selected="" hidden="">No of Children
+                                                            </option>
                                                             <option>0</option>
                                                             <option>1</option>
                                                             <option>2</option>
@@ -157,13 +158,15 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <input class="form-control" type="email" name="email" placeholder="Enter your Email">
+                                                        <input class="form-control" type="email" name="email"
+                                                            placeholder="Enter your Email">
                                                         <span class="form-label">Email</span>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <input class="form-control" type="number" name="number" placeholder="Enter you Phone">
+                                                        <input class="form-control" type="number" name="number"
+                                                            placeholder="Enter you Phone">
                                                         <span class="form-label">Phone</span>
                                                     </div>
                                                 </div>
@@ -175,58 +178,59 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-            <!--/First slide-->
-        </div>
-        <!--/.Slides-->
-    </div>
 
-    <!-- Footer -->
-    <?php include ('asset/footer.html');?>
+            <!-- Footer -->
+            <?php include ('asset/footer.html');?>
 
 
 
 
-    <script src="js/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $('.form-control').each(function () {
-            floatedLabel($(this));
-        });
+            <script src="js/jquery.min.js" type="text/javascript"></script>
+            <script type="text/javascript">
+                $('.form-control').each(function () {
+                    floatedLabel($(this));
+                });
 
-        $('.form-control').on('input', function () {
-            floatedLabel($(this));
-        });
+                $('.form-control').on('input', function () {
+                    floatedLabel($(this));
+                });
 
-        function floatedLabel(input) {
-            var $field = input.closest('.form-group');
-            if (input.val()) {
-                $field.addClass('input-not-empty');
-            } else {
-                $field.removeClass('input-not-empty');
-            }
-        }
-    </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+                function floatedLabel(input) {
+                    var $field = input.closest('.form-group');
+                    if (input.val()) {
+                        $field.addClass('input-not-empty');
+                    } else {
+                        $field.removeClass('input-not-empty');
+                    }
+                }
+            </script>
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
 
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13" type="text/javascript"></script>
-    <script type="text/javascript">
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+                
+                <!-- from calander -->
+            <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+                type="text/javascript"></script>
+            <script type="text/javascript">
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
 
-        gtag('config', 'UA-23581568-13');
-    </script>
+                gtag('config', 'UA-23581568-13');
+            </script>
+            <!---------------->
 
 </body>
 
